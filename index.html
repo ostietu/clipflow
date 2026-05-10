@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clipflow — Política de Privacidad</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;500&display=swap');
+
+  :root {
+    --bg: #0a0a0a;
+    --surface: #141414;
+    --border: #1f1f1f;
+    --accent: #ff3b3b;
+    --accent2: #ff6b35;
+    --text: #f0f0f0;
+    --muted: #666;
+    --green: #00d68f;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    line-height: 1.7;
+    font-size: 16px;
+  }
+
+  header {
+    border-bottom: 1px solid var(--border);
+    padding: 24px 0;
+  }
+
+  .container {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  .logo {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 26px;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .tagline {
+    font-size: 13px;
+    color: var(--muted);
+    margin-top: 4px;
+  }
+
+  main {
+    padding: 60px 0;
+  }
+
+  h1 {
+    font-family: 'Syne', sans-serif;
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+
+  .updated {
+    font-size: 13px;
+    color: var(--muted);
+    margin-bottom: 48px;
+  }
+
+  .highlight {
+    background: #0d2a1e;
+    border: 1px solid rgba(0, 214, 143, 0.25);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 48px;
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+  }
+
+  .highlight-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--green);
+    flex-shrink: 0;
+    margin-top: 7px;
+  }
+
+  .highlight p {
+    color: var(--green);
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  section {
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  section:last-child {
+    border-bottom: none;
+  }
+
+  h2 {
+    font-family: 'Syne', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: var(--text);
+  }
+
+  p {
+    color: #aaa;
+    margin-bottom: 12px;
+  }
+
+  ul {
+    color: #aaa;
+    padding-left: 20px;
+  }
+
+  ul li {
+    margin-bottom: 8px;
+  }
+
+  strong {
+    color: var(--text);
+    font-weight: 500;
+  }
+
+  .badge {
+    display: inline-block;
+    background: #1a0000;
+    border: 1px solid rgba(255,59,59,0.3);
+    color: var(--accent);
+    font-size: 12px;
+    font-weight: 500;
+    padding: 3px 10px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+  }
+
+  footer {
+    border-top: 1px solid var(--border);
+    padding: 32px 0;
+    text-align: center;
+  }
+
+  footer p {
+    font-size: 13px;
+    color: var(--muted);
+    margin: 0;
+  }
+
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <div class="logo">clipflow</div>
+    <div class="tagline">Graba. Descarga. Listo.</div>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+
+    <div class="badge">Privacidad</div>
+    <h1>Política de Privacidad</h1>
+    <p class="updated">Última actualización: mayo de 2025</p>
+
+    <div class="highlight">
+      <div class="highlight-dot"></div>
+      <p>Clipflow no recopila, almacena ni transmite ningún dato personal. Todo ocurre en tu dispositivo. Tus vídeos nunca salen de tu ordenador.</p>
+    </div>
+
+    <section>
+      <h2>¿Qué datos recopila Clipflow?</h2>
+      <p><strong>Ninguno.</strong> Clipflow no recopila ningún tipo de dato personal, de uso, analítica, ni información de identificación.</p>
+      <p>No utilizamos cookies, no tenemos servidores propios y no realizamos ninguna conexión a internet durante el uso de la extensión.</p>
+    </section>
+
+    <section>
+      <h2>¿Qué permisos usa y por qué?</h2>
+      <p>Clipflow solicita los siguientes permisos estrictamente necesarios para su funcionamiento:</p>
+      <ul>
+        <li><strong>tabCapture:</strong> permite capturar el vídeo y audio de la pestaña activa del navegador para realizar la grabación.</li>
+        <li><strong>scripting:</strong> necesario para iniciar el proceso de captura desde el popup de la extensión.</li>
+        <li><strong>storage:</strong> usado únicamente para guardar preferencias locales del usuario (como si el micrófono está activado), sin enviar datos a ningún servidor.</li>
+      </ul>
+      <p>Ninguno de estos permisos se usa para recopilar, analizar ni transmitir información del usuario.</p>
+    </section>
+
+    <section>
+      <h2>Grabaciones de vídeo</h2>
+      <p>Las grabaciones realizadas con Clipflow se procesan íntegramente en el navegador del usuario y se descargan directamente en su dispositivo local.</p>
+      <p>En ningún momento se suben a servidores externos, servicios en la nube ni terceros.</p>
+    </section>
+
+    <section>
+      <h2>Terceros</h2>
+      <p>Clipflow no integra ningún servicio de terceros, SDKs de analítica, publicidad ni rastreo. No compartimos ningún dato con terceros porque simplemente no los recopilamos.</p>
+    </section>
+
+    <section>
+      <h2>Menores de edad</h2>
+      <p>Clipflow no recopila datos de ningún usuario, independientemente de su edad. La extensión es apta para todos los públicos.</p>
+    </section>
+
+    <section>
+      <h2>Cambios en esta política</h2>
+      <p>Si en el futuro realizamos cambios en esta política de privacidad, actualizaremos la fecha de esta página. Te recomendamos revisarla periódicamente.</p>
+    </section>
+
+    <section>
+      <h2>Contacto</h2>
+      <p>Si tienes alguna pregunta sobre esta política de privacidad, puedes contactarnos en:</p>
+      <p><a href="mailto:clipflow.app@gmail.com">clipflow.app@gmail.com</a></p>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <p>© 2025 Clipflow · Hecho con ❤️ · <a href="mailto:clipflow.app@gmail.com">Contacto</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
